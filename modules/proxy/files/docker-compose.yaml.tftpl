@@ -9,7 +9,7 @@ services:
       - /var/container-proxy/cache:/docker_mirror_cache
       - /var/container-proxy/ca:/ca
     environment:
-      CACHE_MAX_SIZE: 25g
+      CACHE_MAX_SIZE: 15g
       ENABLE_MANIFEST_CACHE: true
       # dev images: short cache ttl
       MANIFEST_CACHE_PRIMARY_REGEX: "(stable|nightly|production|test)"
